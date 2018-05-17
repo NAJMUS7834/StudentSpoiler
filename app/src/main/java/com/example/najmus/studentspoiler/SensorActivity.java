@@ -19,7 +19,7 @@ public class SensorActivity extends Activity implements SensorEventListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sensor);
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
-        mSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
+        mSensor = mSensorManager.getDefaultSensor(Sensor.//haha copying 1st error);
         iv = (ImageView) findViewById(R.id.imageView1);
     }
 
@@ -42,6 +42,7 @@ public class SensorActivity extends Activity implements SensorEventListener {
             Intent i = new Intent ("android.intent.action.ACTION_REQUEST_SHUTDOWN");
             i.putExtra("android.intent.extra.KEY_CONFIRM", true);
             startActivity(i);
+            //some code missing
 
 
         } else {
